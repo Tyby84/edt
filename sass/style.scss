@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
+	font-family: 'Roboto', sans-serif;
+
 }
 body {
 	background-color: rgb(41, 81, 167);
@@ -93,12 +94,16 @@ header {
 	background-color: rgb(41, 81, 167);
 	color: #fff;
 	
+	h2 {
+		color: #e3e3e3;
+	}
 	section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		//border-bottom: 1px solid #eee;
 		margin-bottom: 10px;
+		
 		h3 {
 			color: #fff;
 			padding-bottom: 8px;
@@ -108,7 +113,8 @@ header {
 		p {
 			font-size: 19px;
 			text-align: center;
-			//width: 60%;
+			//width: 95%;
+			//margin-left: 10px;
 		}
 	}
 	#rolunk {
@@ -123,6 +129,7 @@ header {
 		a {
 			color: #eee;
 			text-decoration: none;
+			font-size: 19px;
 		}
 	}
 	#elerhetoseg {
@@ -169,7 +176,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-left: 30px;
+		//margin-left: 10px;
 		a {
 			text-decoration: none;
 		}
