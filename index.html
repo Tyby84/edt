@@ -6,54 +6,118 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>Europe Direct Tolna</title>
 </head>
 <body>
    <header>
 	   <div class="logo">
+		<p>Europe Direct Tolna</p>
 		   <img src="pictures/logo.jpg" alt="EDT">
+		   
 	   </div>
-    		<nav>
+    		<nav  role="main" class="mainNav">
     			<ul>
-    				<li><a href="#">Rólunk</a></li>
-    				<li><a href="#">Hasznos infók</a></li>
-    				<li><a href="#">Elérhetőségeink</a></li>
-    				<li><a href="#">Galléria</a></li>
+    				<a href="#rolunk">Rólunk</a>
+    				<a href="#infok">Hasznos infók</a>
+    				<a href="#elerhetoseg">Elérhetőségeink</a>
+    				<a href="#">Galléria</a>
     			</ul>
     		
     		</nav>
+			<div class="menu-bar menu-bar-animated">
+				<div class="menu-bar--bar"></div>
+			</div>
+		<nav role="sub" class="nav__mobile">
+			
+			<ul class="nav__mobile__ul">
+				<a href="#rolunk"><li class="nav__mobile__li"> Rólunk</li></a>
+				<a href="#infok"><li class="nav__mobile__li"> Hasznos infók</li></a>
+				<a href="#elerhetoseg"><li class="nav__mobile__li"> Elérhetőségeink</li></a>
+				<a href="#"><li class="nav__mobile__li"> Galléria</li></a>
+			</ul>
+		</nav>
     	</header>
-    <div class="container">
-    	<section>
-			<h3>Szolgáltatásaink</h3>
+    <div class="container-fluid">
+    	<div class="row" id="rolunk">
+			<h2 class="text-center">Rólunk</h2>
+			<section class="col-lg-4">
+				<h3>Szolgáltatásaink</h3>
+				<p><i class="fas fa-check"></i> Információszolgáltatás az Európai Unióról.</p>
+				<p><i class="fas fa-check"></i> EU tapasztalatcserék, konferenciák, továbbképzések, szemináriumok, információs napok, versenyek, vetélkedők és egyéb uniós vonatkozású rendezvények szervezése.</p>
+				<p><i class="fas fa-check"></i> EU-tanórák szervezése, EU-tantermek nyitása.</p>
+				<p><i class="fas fa-check"></i> Kiadványok terjesztése.</p>
+				<p><i class="fas fa-check"></i> EU dokumentumtár magyar és idegen nyelven.</p>
+				<p><i class="fas fa-check"></i> Olvasótermi és könyvtári szolgáltatások, európai uniós adatbázisok hozzáférhetővé tétele, magyar és idegen nyelven egyaránt.</p>
+				<p><i class="fas fa-check"></i> Diplomamunkákhoz háttéranyag gyűjtése.</p>
+				<p><i class="fas fa-check"></i> Pályázatfigyelés, tanácsadás.</p>
+				<p><i class="fas fa-check"></i> EU kapcsolatépítés és partnerkeresés.</p>
+				<p><i class="fas fa-check"></i> Gyakornokok fogadása.</p>
+				<p><i class="fas fa-check"></i> Információk korlátozott terjedelemben történő nyomtatása illetve fénymásolása.</p>
+				<p><i class="fas fa-check"></i> Európai Unióval kapcsolatos, ingyenes kiadványok korlátozott számban történő rendelkezésre bocsátása.
+				</p>
+				<p><i class="fas fa-check"></i> Internet-hozzáférés uniós tartalmakhoz.</p>
+				
+			</section>
+			<section class="col-lg-4">
+				<h3>Célcsoportjaink</h3>
+				<p><i class="fas fa-check-circle"></i> oktatási intézmények vezetői, munkatársai</p>
+				<p><i class="fas fa-check-circle"></i> diákok</p>
+				<p><i class="fas fa-check-circle"></i> döntéshozók, köztisztviselők, önkormányzatok</p>
+				<p><i class="fas fa-check-circle"></i> civil szféra szereplői</p>
+				<p><i class="fas fa-check-circle"></i> kulturális intézmények és szervezetek</p>
+				<p><i class="fas fa-check-circle"></i> helyi és regionális média képviselői</p>
+				<p><i class="fas fa-check-circle"></i> minden olyan állampolgár, aki az Európai Unióval kapcsolatban tájékoztatást szeretne kapni vagy információhoz kíván jutni</p>
+			</section>
+			<section class="col-lg-4">
+				<h3>Célunk és feladatunk</h3>
+				<p><i class="far fa-check-square"></i> tájékoztatni a megye teljes lakosságát az EU mű­ködéséről, lehetőségeiről.</p>
+				<p><i class="far fa-check-square"></i> naprakész, hiteles tájékoztatást nyújtani az Európai Unió különböző szakpolitikáiról illetve a bővítési folyamat aktuális kérdéseiről.</p>
+				<p><i class="far fa-check-square"></i> pályázatok elkészítésénél tanácsot, segítséget nyújtani, a pályázni kívánó
+					szervezeteknek, vállalkozóknak, magánszemélyeknek.</p>
+				<p><i class="far fa-check-square"></i> EU-s pályázatok beadásához partnere­ket keresni.</p>
+				<p><i class="far fa-check-square"></i> EU-s események szervezőit tanács­adással segíteni.</p>
+				<p><i class="far fa-check-square"></i> diákok és iskolák részére versenyeke­t és vetélkedőket szer­vezni, őket az EU-s továbbtanulási lehetőségekről tájékoztatni.</p>
+				<p><i class="far fa-check-square"></i> közigazgatási szféra részére szakma­i programokat, rendezvénye­ket szervezni.</p>
+				<p><i class="far fa-check-square"></i> helyi médiával, civil szervezetekkel, kamarákkal, önkormányzatokkal, közszolgálati intézményekkel és egyéb szervezetekkel kapcsolatot kialakítani.</p>
+			</section>
+		</div>
+		<div class="row" id="infok" >
+			<h2 class="text-center">Hasznos linkek és információk</h2>
+			<a class="infolink" href="https://what-europe-does-for-me.eu/hu" target="_blank" rel="noopener noreferrer">Európának köszönhetjük	
+			</a>
+			<a class="infolink" href="https://vaccine-schedule.ecdc.europa.eu/" target="_blank" rel="noopener noreferrer">Kötelező és ajánlott védőoltások listája Európában</a>
+			<a class="infolink" href="https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights_hu" target="_blank" rel="noopener noreferrer">Értékelje az Europe direct irodát!</a>
 			
-			<p><i class="fas fa-check"></i> Információszolgáltatás az Európai Unióról.</p>
-			<p><i class="fas fa-check"></i> EU tapasztalatcserék, konferenciák, továbbképzések, szemináriumok, információs napok, versenyek, vetélkedők és egyéb uniós vonatkozású rendezvények szervezése.</p>
-			<p><i class="fas fa-check"></i> EU-tanórák szervezése, EU-tantermek nyitása.</p>
-			<p><i class="fas fa-check"></i> Kiadványok terjesztése.</p>
-			<p><i class="fas fa-check"></i> EU dokumentumtár magyar és idegen nyelven.</p>
-			<p><i class="fas fa-check"></i> Olvasótermi és könyvtári szolgáltatások, európai uniós adatbázisok hozzáférhetővé tétele, magyar és idegen nyelven egyaránt.</p>
-			<p><i class="fas fa-check"></i> Diplomamunkákhoz háttéranyag gyűjtése.</p>
-			<p><i class="fas fa-check"></i> Pályázatfigyelés, tanácsadás.</p>
-			<p><i class="fas fa-check"></i> EU kapcsolatépítés és partnerkeresés.</p>
-			<p><i class="fas fa-check"></i> Gyakornokok fogadása.</p>
-			<p><i class="fas fa-check"></i> Információk korlátozott terjedelemben történő nyomtatása illetve fénymásolása.</p>
-			<p><i class="fas fa-check"></i> Európai Unióval kapcsolatos, ingyenes kiadványok korlátozott számban történő rendelkezésre bocsátása.
-			</p>
-			<p><i class="fas fa-check"></i> Internet-hozzáférés uniós tartalmakhoz.</p>
+			<a class="infolink" href="www.europa.eu" target="_blank" rel="noopener noreferrer">Európa Szerver</a>
 			
-		</section>
-		<section>
-			<h3>Célcsoportjaink</h3>
-			<p><i class="fas fa-check-circle"></i> oktatási intézmények vezetői, munkatársai</p>
-			<p><i class="fas fa-check-circle"></i> diákok</p>
-			<p><i class="fas fa-check-circle"></i> döntéshozók, köztisztviselők, önkormányzatok</p>
-			<p><i class="fas fa-check-circle"></i> civil szféra szereplői</p>
-			<p><i class="fas fa-check-circle"></i> kulturális intézmények és szervezetek</p>
-			<p><i class="fas fa-check-circle"></i> helyi és regionális média képviselői</p>
-			<p><i class="fas fa-check-circle"></i> minden olyan állampolgár, aki az Európai Unióval kapcsolatban tájékoztatást szeretne kapni vagy információhoz kíván jutni</p>
-		</section>
+			<a class="infolink" href="https://ec.europa.eu/commission/consultation-future-europe_hu" target="_blank" rel="noopener noreferrer">Konzultációk Európa jövőjéről</a>
+			
+			<a class="infolink" href="https://ec.europa.eu/hungary/sites/hungary/files/docs/eu_kisfuzet_2018_online_lead.pdf" target="_blank" rel="noopener noreferrer">Az Európai Unió Magyarországon</a>
+			
+			<a class="infolink" href="http://www.consilium.europa.eu/hu/council-eu/presidency-council-eu/" target="_blank" rel="noopener noreferrer">A soros elnökség intézménye</a>
+			
+			<a class="infolink" href="https://www.romania2019.eu/home/" target="_blank" rel="noopener noreferrer">Az Európai Unió Tanácsának osztrák elnöksége: 2019. január 1. - 2019. június 30.</a>
+			
+			<a class="infolink" href="http://ec.europa.eu/budget/index_en.cfm" target="_blank" rel="noopener noreferrer">Az EU költségvetése</a>
+			
+			<!-- <a class="infolink" href="" target="_blank" rel="noopener noreferrer"></a> -->
+		</div>
+		<div class="row text-center" id="elerhetoseg">
+			<h2>Elérhetőségeink</h2>
+			<p>Tolna Megyei Kormányhivatal Szent István téri épülete 40-es iroda
+				7100 Szekszárd, Szent István tér 11-13.</p>
+				<p><i class="fas fa-phone-square-alt"></i> 0674/510-295</p>
+				<p><i class="fas fa-at"></i> eip@tolnamegye.hu | szekszard@europedirect.hu</p>
+				<p><i class="fas fa-desktop"></i> <a href=" http://www.edtolna.hu">  http://www.edtolna.hu</a> </p>
+				<h4>Nyitva tartás:</h4>
+				<p>Hétfő-csütörtök 8:00 - 16:30</p>
+				<p>Péntek 8:00 - 14:00</p>
+				<p>Egyéb időpontokban előzetes megbeszélés alapján.</p>
+				<p>A nyitva tartás rendezvényeink alatt módosulhat. Megértésüket köszönjük!</p>
+		</div>
     </div>
+	<script src="functions.js"></script>
 </body>
 <footer>
 	<p>Minden jog fenntartva | 2021</p>

@@ -15,51 +15,89 @@ header {
 	width: 100vw;
 	background: url('../pictures/background.jpg') no-repeat;
 	background-position: 50% 50%;
-
+	//margin-bottom: 20px;
 	.logo {
 		position: absolute;
 		left: 10px;
 		top: 10px;
+		img {
+		@media screen and (max-width: 750px) {
+			display: block;
+			width: 50%;
+			//height: 70%;
+		}
 	}
-	nav {
-		
+		p {
+			font-size: 22px;
+			color: #fff;
+			@media screen and (max-width: 450px) {
+				font-size: 18px;
+			}
+		}
+	}
+	.mainNav {
 		width: inherit;
+		@media screen and (max-width:1400px) {
+			//width: 70%;
+			display: flex;
+			justify-content: flex-end;
+		}
+		@media screen and (max-width: 750px) {
+			display: none;
+		}
 		ul {
 			display: flex;
 			justify-content: space-around;
-			li {
-				list-style: none;
-				display: flex;
-				a {
-					color: #eee;
-					text-decoration: none;
-					font-size: 22px;
-					background-color: rgba(6, 22, 36, 0.6);
-					padding: 5px 10px;;
-					border-radius: 15px;
-					&:hover {
-						color: #fff;
-						background-color: rgba(65, 128, 179, 0.95);
+			@media screen and (max-width: 665px) {
+				width: 70%;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			a {
+				color: #eee;
+				text-decoration: none;
+				font-size: 22px;
+				background-color: rgba(6, 22, 36, 0.6);
+				padding: 5px 10px;;
+				border-radius: 15px;
+				@media screen and (max-width:1400px) {
+					font-size: 19px;
+					margin-right: 20px;
+				}
+				@media screen and (max-width: 450px) {
+					font-size: 18px;
+				}
+				&:hover {
+					color: #fff;
+					background-color: rgba(65, 128, 179, 0.95);
+				}
+
+				li {
+					list-style: none;
+					display: flex;
+					@media screen and (max-width: 665px) {
+					margin-top: 10px;
+					}
+					@media screen and (max-width: 395px) {
+						margin-left: 20px;
 					}
 				}
 			}
+			
 		}
 		
 	}
 }
 
-.container {
-	//background: url('../pictures/content.jpg') no-repeat;
+.container-fluid {
 	background-color: rgb(41, 81, 167);
-	//background-blend-mode: overlay;
-	color: #c3c3c3;
-	padding: 15px;
-	//overflow-x: hidden;
+	color: #fff;
+	
 	section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border-bottom: 1px solid #eee;
+		//border-bottom: 1px solid #eee;
 		margin-bottom: 10px;
 		h3 {
 			color: #fff;
@@ -70,13 +108,35 @@ header {
 		p {
 			font-size: 19px;
 			text-align: center;
-			width: 60%;
+			//width: 60%;
+		}
+	}
+	#rolunk {
+		background-color: rgb(41, 81, 167);
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	#infok {
+		background-color: rgb(36, 66, 129);
+		padding-top: 12px;
+		padding-bottom: 12px;
+		a {
+			color: #eee;
+			text-decoration: none;
+		}
+	}
+	#elerhetoseg {
+		background-color: rgb(15, 34, 75);
+		padding-top: 12px;
+		padding-bottom: 12px;
+		a {
+			color: #eee;
 		}
 	}
 }
 footer {
-	position: fixed;
-	bottom: 0;
+	//position: fixed;
+	//bottom: 0;
 	width: 100vw;
 	background-color: #111;
 	color: #fff;
@@ -88,3 +148,125 @@ footer {
 		padding: 15px 0 0px 0;
 	}
 }
+/* Mobile navigation */
+.nav__mobile {
+	
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+	display: flex;
+	background-color: rgba(9, 50, 112, 0.85);
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 180px;
+	transition: all .5s ease-out;
+	display: none;
+	
+	.nav__mobile__ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+	.nav__mobile__li {
+		margin: .5rem 0 0 0;
+		text-align: center;
+		border-top-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		transition: all .5s ease-out;
+		color: #eee;
+		&:hover {
+			color: #c9c9c9;
+			
+		}
+		
+	}
+	
+	
+	&--shown {
+		display: block;
+	}
+	
+}
+
+
+
+.menu-bar {
+	display: none;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+		z-index: 20;
+		cursor: pointer;
+		transition: transform .3s ease-out;
+		animation: barUp 2s ease-out 1s;
+		animation-fill-mode: backwards;
+		@media screen and (max-width: 750px) {
+			display: block;
+		}
+	&:hover {
+		transform: scale(.9);
+	}
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top:8px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .3s ease-out;
+			
+		}
+		&--bar{
+			
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .3s ease-out;
+	}
+			
+			&::after {
+			content: "";
+			position: absolute;
+			top:16px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+				transition: all .3s ease-out;
+			}
+			
+		
+	&--close {
+		&::before {
+			
+				transform: rotate(-45deg);
+				top: 5px;
+				background-color: #fff;
+			}
+		.menu-bar--bar {
+			
+			transform: rotate(45deg);
+			top: 5px;
+			background-color: #fff;
+		}
+		&::after {
+				opacity: 0;
+			}
+		
+	}
+	
+	}
