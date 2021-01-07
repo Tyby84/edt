@@ -30,4 +30,10 @@ $(document).ready(function(){
         $('table').css("display", "none");
         $('#six').css("display", "block");
     });
+
+    $('.page-item').click(function() {
+        $('.page-item').removeClass('active');
+        $(this).addClass('active');
+    }); 
+
   });
