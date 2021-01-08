@@ -135,7 +135,7 @@ header .mainNav ul a li {
 }
 
 .container-fluid {
-  background-color: #2951a7;
+  background-color: #11a3bd;
   color: #fff;
 }
 
@@ -154,6 +154,7 @@ header .mainNav ul a li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid #eee;
   margin-bottom: -12px;
   padding-top: 10px;
 }
@@ -167,18 +168,19 @@ header .mainNav ul a li {
 .container-fluid section p {
   font-size: 19px;
   text-align: center;
+  font-weight: 300;
 }
 
 .container-fluid .rolunk {
-  background-color: #3363ca;
+  background-color: #33b3ca;
 }
 
 .container-fluid .csoport {
-  background-color: #2951a7;
+  background-color: #11a3bd;
 }
 
 .container-fluid .celok {
-  background-color: #447af0;
+  background-color: #10869b;
 }
 
 .container-fluid #rolunk {
@@ -187,13 +189,13 @@ header .mainNav ul a li {
 }
 
 .container-fluid #infok {
-  background-color: #88b9da;
+  background-color: #0b6170;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.container-fluid #infok a {
-  color: #222;
+.container-fluid #infok a, .container-fluid #infok td {
+  color: #eee;
   text-decoration: none;
   font-size: 17px;
 }
@@ -374,4 +376,8 @@ footer p {
 /* Tablak*/
 #two, #three, #four, #five, #six {
   display: none;
+}
+
+.page-link {
+  background-color: #0c5461;
 }
