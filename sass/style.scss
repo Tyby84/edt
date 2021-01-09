@@ -6,7 +6,6 @@
 
 }
 body {
-	
 	background-color: rgb(41, 81, 167);
 	overflow-x: hidden;
 }
@@ -42,7 +41,6 @@ header {
 	.mainNav {
 		width: inherit;
 		@media screen and (max-width:1400px) {
-			//width: 70%;
 			display: flex;
 			justify-content: flex-end;
 		}
