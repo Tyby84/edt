@@ -20,12 +20,23 @@ header {
 		position: absolute;
 		left: 10px;
 		top: 10px;
+		@media screen and (max-width: 750px) {
+			top: 2px;
+		}
 		.logoPic {
+			
 		@media screen and (max-width: 750px) {
 			display: block;
 			width: 50%;
 			//height: 70%;
 		}
+		@media screen and (max-width: 706px) {
+			width: 35%;
+		}
+		@media screen and (max-width: 546px) {
+			width: 25%;
+		}
+		
 	}
 	
 	

@@ -31,9 +31,27 @@ header .logo {
 }
 
 @media screen and (max-width: 750px) {
+  header .logo {
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 750px) {
   header .logo .logoPic {
     display: block;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  header .logo .logoPic {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  header .logo .logoPic {
+    width: 25%;
   }
 }
 
