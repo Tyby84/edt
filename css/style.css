@@ -31,7 +31,7 @@ header .logo {
 }
 
 @media screen and (max-width: 750px) {
-  header .logo img {
+  header .logo .logoPic {
     display: block;
     width: 50%;
   }
@@ -134,6 +134,10 @@ header .mainNav ul a li {
   }
 }
 
+.latszik {
+  display: block !important;
+}
+
 .container-fluid {
   background-color: #11a3bd;
   color: #fff;
@@ -141,6 +145,47 @@ header .mainNav ul a li {
 
 .container-fluid h2 {
   color: #e3e3e3;
+}
+
+.container-fluid .flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.container-fluid .flags .angol, .container-fluid .flags .nemet {
+  display: none;
+  position: absolute;
+  top: 0;
+  font-size: 19px;
+  background-color: rgba(34, 34, 34, 0.87);
+  color: #eee;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-fluid .flags .angol, .container-fluid .flags .nemet {
+    top: 100px;
+  }
+}
+
+.container-fluid .flags .nemet {
+  left: 0;
+  padding-left: 8px;
+}
+
+.container-fluid .flags .angol {
+  right: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid .flags .angol {
+    right: 20px;
+  }
 }
 
 .container-fluid section {
@@ -266,6 +311,7 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 20px;
 }
 
 .nav__mobile .nav__mobile__ul a {
@@ -273,6 +319,7 @@ footer p {
 }
 
 .nav__mobile .nav__mobile__li {
+  list-style-type: none;
   margin: .5rem 0 0 0;
   text-align: center;
   border-top-left-radius: 1rem;

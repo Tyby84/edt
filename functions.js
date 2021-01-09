@@ -35,5 +35,13 @@ $(document).ready(function(){
         $('.page-item').removeClass('active');
         $(this).addClass('active');
     }); 
+    
+    $('.german').click(function() {
+        $('.nemet').toggleClass('latszik');
+    });
 
+    $('.brit').click(function() {
+        $('.angol').toggleClass('latszik');
+    });
+    
   });

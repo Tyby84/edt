@@ -17,18 +17,19 @@ header {
 	width: 100vw;
 	background: url('../pictures/background.jpg') no-repeat;
 	background-position: 50% 50%;
-	//margin-bottom: 20px;
 	.logo {
 		position: absolute;
 		left: 10px;
 		top: 10px;
-		img {
+		.logoPic {
 		@media screen and (max-width: 750px) {
 			display: block;
 			width: 50%;
 			//height: 70%;
 		}
 	}
+	
+	
 		p {
 			font-size: 22px;
 			color: #fff;
@@ -37,6 +38,7 @@ header {
 			}
 		}
 	}
+	
 	.mainNav {
 		width: inherit;
 		@media screen and (max-width:1400px) {
@@ -91,13 +93,43 @@ header {
 	}
 }
 
+.latszik {
+	display: block !important;
+}
 .container-fluid {
 	background-color: rgb(17, 163, 189);
-	//background-color: rgb(41, 81, 167);
 	color: #fff;
 	
 	h2 {
 		color: #e3e3e3;
+	}
+	.flags {
+		display: flex;
+		justify-content: space-evenly;
+		position: relative;
+		.angol, .nemet {
+			display: none;
+			position: absolute;
+			top: 0;
+			font-size:  19px;
+			background-color: rgba(34, 34, 34, 0.87);
+			color: #eee;
+			padding: 8px;
+			@media screen and (max-width: 1200px) {
+				top: 100px;
+			}
+		}
+		.nemet {
+			left: 0;
+			padding-left: 8px;
+		}
+		.angol {
+			right: 120px;
+			@media screen and (max-width: 600px) {
+				right: 20px;
+			}
+		}
+		
 	}
 	section {
 		display: flex;
@@ -156,13 +188,10 @@ header {
 		}
 	}
 }
-// table {
-// 	width:50%;
-// }
+
 
 footer {
-	//position: fixed;
-	//bottom: 0;
+
 	width: 100vw;
 	background-color: #111;
 	color: #fff;
@@ -195,12 +224,13 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		//margin-left: 10px;
+		padding-right: 20px;
 		a {
 			text-decoration: none;
 		}
 	}
 	.nav__mobile__li {
+		list-style-type: none;
 		margin: .5rem 0 0 0;
 		text-align: center;
 		border-top-left-radius: 1rem;
