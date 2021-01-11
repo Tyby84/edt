@@ -192,8 +192,16 @@ header .mainNav ul a li {
 }
 
 .container-fluid .flags .nemet {
-  left: 0;
+  left: 10px;
+  top: 60px;
+  width: 40%;
   padding-left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid .flags .nemet {
+    width: 95%;
+  }
 }
 
 .container-fluid .flags .angol {
@@ -204,6 +212,11 @@ header .mainNav ul a li {
   .container-fluid .flags .angol {
     right: 20px;
   }
+}
+
+.container-fluid .flags .german, .container-fluid .flags .brit {
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .container-fluid section {

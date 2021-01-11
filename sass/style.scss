@@ -124,19 +124,29 @@ header {
 			background-color: rgba(34, 34, 34, 0.87);
 			color: #eee;
 			padding: 8px;
+			
 			@media screen and (max-width: 1200px) {
 				top: 100px;
 			}
 		}
 		.nemet {
-			left: 0;
+			left: 10px;
+			top: 60px;
+			width: 40%;
 			padding-left: 8px;
+			@media screen and(max-width: 600px) {
+				width: 95%;
+			}
 		}
 		.angol {
 			right: 120px;
 			@media screen and (max-width: 600px) {
 				right: 20px;
 			}
+		}
+		.german, .brit {
+			margin-bottom: 5px;
+			cursor: pointer;
 		}
 		
 	}
