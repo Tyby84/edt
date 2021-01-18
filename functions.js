@@ -37,7 +37,7 @@ $(document).ready(function(){
     }); 
     
     $('.german').click(function() {
-        $('.nemet').toggleClass('latszik');
+        $('.nemetOldal').toggleClass('latszik');
     });
 
     $('.brit').click(function() {

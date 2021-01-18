@@ -153,7 +153,16 @@ header .mainNav ul a li {
 }
 
 .latszik {
-  display: block !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media screen and (max-width: 600px) {
+  .latszik {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
 }
 
 .container-fluid {
@@ -175,32 +184,36 @@ header .mainNav ul a li {
   position: relative;
 }
 
-.container-fluid .flags .angol, .container-fluid .flags .nemet {
-  display: none;
+.container-fluid .flags .nemetOldal {
   position: absolute;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0px;
+  top: 60px;
+  width: 100%;
+  padding-left: 8px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid .flags .nemetOldal {
+    width: 95%;
+    top: -20px;
+  }
+}
+
+.container-fluid .flags .angol, .container-fluid .flags .nemetOldal {
+  display: none;
   font-size: 19px;
-  background-color: rgba(34, 34, 34, 0.87);
+  background-color: #222222;
   color: #eee;
   padding: 8px;
 }
 
 @media screen and (max-width: 1200px) {
-  .container-fluid .flags .angol, .container-fluid .flags .nemet {
+  .container-fluid .flags .angol, .container-fluid .flags .nemetOldal {
     top: 100px;
-  }
-}
-
-.container-fluid .flags .nemet {
-  left: 10px;
-  top: 60px;
-  width: 40%;
-  padding-left: 8px;
-}
-
-@media screen and (max-width: 600px) {
-  .container-fluid .flags .nemet {
-    width: 95%;
   }
 }
 
