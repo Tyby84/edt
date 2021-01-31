@@ -465,10 +465,14 @@ footer p {
 }
 
 /* Tablak*/
-#two, #three, #four, #five, #six {
+table#two, table#three, table#four, table#five, table#six {
   display: none;
 }
 
 .page-link {
-  background-color: #0c5461;
+  background-color: #14788a !important;
+}
+
+.page-link:hover {
+  color: #aaaaaa !important;
 }
