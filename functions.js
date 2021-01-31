@@ -4,7 +4,7 @@ $(document).ready(function(){
         $('.nav__mobile').toggleClass('nav__mobile--shown');
         $('.menu-bar').toggleClass('menu-bar--close');
     });
-    $('.egy').click(function() {
+    /* $('.egy').click(function() {
         $('.table').css("display", "none");
         $('#one').css("display", "block");
         $('page-link').attr('href', '#egy').parent(".page-item").addClass('active');
@@ -29,6 +29,12 @@ $(document).ready(function(){
     $('.hat').click(function() {
         $('table').css("display", "none");
         $('#six').css("display", "block");
+    }); */
+
+    let link = $('.page-item');
+    link.click(function() {
+        let item = $(this).children("a").attr("id");
+        console.log(item);
     });
 
     $('.page-item').click(function() {
