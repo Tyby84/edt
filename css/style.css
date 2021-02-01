@@ -22,6 +22,7 @@ header {
   width: 100vw;
   background: url("../pictures/background.jpg") no-repeat;
   background-position: 50% 50%;
+  position: relative;
 }
 
 header .logo {
@@ -152,6 +153,66 @@ header .mainNav ul a li {
   }
 }
 
+header .flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 40%;
+}
+
+header .flags .nemetOldal {
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 90px;
+  width: 100vw;
+  padding-left: 8px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  header .flags .nemetOldal {
+    width: 95%;
+    top: -20px;
+  }
+}
+
+header .flags .angol, header .flags .nemetOldal {
+  display: none;
+  font-size: 19px;
+  background-color: #222222;
+  color: #eee;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .flags .angol, header .flags .nemetOldal {
+    top: 100px;
+  }
+}
+
+header .flags .angol {
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  right: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  header .flags .angol {
+    right: 20px;
+  }
+}
+
+header .flags .german, header .flags .brit {
+  margin-bottom: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
 .latszik {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -172,64 +233,6 @@ header .mainNav ul a li {
 
 .container-fluid h2 {
   color: #e3e3e3;
-}
-
-.container-fluid .flags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: relative;
-}
-
-.container-fluid .flags .nemetOldal {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 0px;
-  top: 60px;
-  width: 100%;
-  padding-left: 8px;
-  padding-bottom: 50px;
-}
-
-@media screen and (max-width: 600px) {
-  .container-fluid .flags .nemetOldal {
-    width: 95%;
-    top: -20px;
-  }
-}
-
-.container-fluid .flags .angol, .container-fluid .flags .nemetOldal {
-  display: none;
-  font-size: 19px;
-  background-color: #222222;
-  color: #eee;
-  padding: 8px;
-}
-
-@media screen and (max-width: 1200px) {
-  .container-fluid .flags .angol, .container-fluid .flags .nemetOldal {
-    top: 100px;
-  }
-}
-
-.container-fluid .flags .angol {
-  right: 120px;
-}
-
-@media screen and (max-width: 600px) {
-  .container-fluid .flags .angol {
-    right: 20px;
-  }
-}
-
-.container-fluid .flags .german, .container-fluid .flags .brit {
-  margin-bottom: 5px;
-  cursor: pointer;
 }
 
 .container-fluid section {

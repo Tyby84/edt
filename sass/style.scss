@@ -16,6 +16,7 @@ header {
 	width: 100vw;
 	background: url('../pictures/background.jpg') no-repeat;
 	background-position: 50% 50%;
+	position: relative;
 	.logo {
 		position: absolute;
 		left: 10px;
@@ -38,8 +39,6 @@ header {
 		}
 		
 	}
-	
-	
 		p {
 			font-size: 22px;
 			color: #fff;
@@ -100,32 +99,16 @@ header {
 		}
 		
 	}
-}
-
-.latszik {
-	display: flex !important;
-	@media screen and(max-width: 600px) {
-		flex-wrap: wrap !important;
-	}
-	
-}
-.container-fluid {
-	background-color: rgb(17, 163, 189);
-	color: #fff;
-	
-	h2 {
-		color: #e3e3e3;
-	}
 	.flags {
 		display: flex;
 		justify-content: space-evenly;
-		position: relative;
+		margin-left: 40%;
 		.nemetOldal {
 			position: absolute;
-			display: flex;
+			display: block;
 			left: 0px;
-			top: 60px;
-			width: 100%;
+			top: 90px;
+			width: 100vw;
 			//height: 100%;
 			padding-left: 8px;
 			padding-bottom: 50px;
@@ -148,9 +131,13 @@ header {
 			}
 		}
 		.nemet, .nemetKontakt {
-			//width: 50%;
+			//width: 50%; 
 		}
 		.angol {
+			position: absolute;
+			//display: block;
+			left: 0px;
+			top: 90px;
 			right: 120px;
 			@media screen and (max-width: 600px) {
 				right: 20px;
@@ -158,9 +145,26 @@ header {
 		}
 		.german, .brit {
 			margin-bottom: 5px;
+			margin-right: 15px;
 			cursor: pointer;
 		}
 		
+	}
+}
+
+.latszik {
+	display: flex !important;
+	@media screen and(max-width: 600px) {
+		flex-wrap: wrap !important;
+	}
+	
+}
+.container-fluid {
+	background-color: rgb(17, 163, 189);
+	color: #fff;
+	
+	h2 {
+		color: #e3e3e3;
 	}
 	section {
 		display: flex;
