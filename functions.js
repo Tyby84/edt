@@ -16,12 +16,22 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     /* Zaszlok - nemet, angol nyelvu bemutatkozas*/
+    $('.close').click(function() {
+        $('.flags').css('display', 'none');
+    });
     $('.german').click(function() {
-        $('.nemetOldal').toggleClass('latszik');
+        $('.flags').css('display', 'block');
+        $('.nemetOldal').addClass('latszik');
+        $('.angol').removeClass('latszik');
+        
     });
 
     $('.brit').click(function() {
-        $('.angol').toggleClass('latszik');
+        $('.flags').css('display', 'block');
+        $('.angol').addClass('latszik');
+        $('.nemetOldal').removeClass('latszik');
+       
     });
+    
     
   });
