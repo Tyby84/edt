@@ -17,11 +17,19 @@ body {
   display: flex !important;
   -ms-flex-wrap: wrap !important;
       flex-wrap: wrap !important;
+  z-index: 9999;
 }
 
 .container-fluid {
   background-color: #11a3bd;
   color: #fff;
+  padding-top: 145px !important;
+}
+
+@media screen and (min-width: 1367px) {
+  .container-fluid {
+    padding-top: 215px !important;
+  }
 }
 
 .container-fluid h2 {
@@ -69,13 +77,11 @@ body {
 }
 
 .container-fluid #rolunk {
-  padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .container-fluid #infok {
   background-color: #0b6170;
-  padding-top: 12px;
   padding-bottom: 12px;
 }
 
@@ -87,7 +93,6 @@ body {
 
 .container-fluid #elerhetoseg {
   background-color: #0f224b;
-  padding-top: 12px;
   padding-bottom: 12px;
 }
 

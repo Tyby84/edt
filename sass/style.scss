@@ -12,10 +12,16 @@ body {
 .latszik {
 	display: flex !important;
 	flex-wrap: wrap !important;
+	z-index: 9999;
 }
 .container-fluid {
 	background-color: rgb(17, 163, 189);
 	color: #fff;
+	@media screen and (min-width: 1367px) {
+		padding-top: 215px !important;
+	}
+	padding-top: 145px !important;
+	
 	h2 {
 		color: #e3e3e3;
 	}
@@ -47,12 +53,12 @@ body {
 		background-color: rgb(16, 134, 155);
 	}
 	#rolunk {
-		padding-top: 12px;
+		
 		padding-bottom: 12px;
 	}
 	#infok {
 		background-color: rgb(11, 97, 112);
-		padding-top: 12px;
+		
 		padding-bottom: 12px;
 		a,td {
 			color: #eee;
@@ -62,7 +68,7 @@ body {
 	}
 	#elerhetoseg {
 		background-color: rgb(15, 34, 75);
-		padding-top: 12px;
+		
 		padding-bottom: 12px;
 		a {
 			color: #eee;
@@ -87,6 +93,7 @@ table#two, table#three, table#four, table#five, table#six {
 	display: none;
   }
   .page-link {
+	 
 	background-color: rgb(20, 120, 138) !important;
 	&:hover {
 		color: rgb(170, 170, 170) !important;
@@ -98,3 +105,4 @@ table#two, table#three, table#four, table#five, table#six {
 	  margin-top: -30px;
 	  margin-left: 15px;
   }
+  

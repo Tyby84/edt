@@ -43,7 +43,7 @@
 
 .nav__mobile .nav__mobile__li {
   list-style-type: none;
-  margin: .5rem 0 0 0;
+  margin: 1rem 0 0 0;
   text-align: center;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;

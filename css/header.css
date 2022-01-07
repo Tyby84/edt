@@ -5,29 +5,26 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
+  height: 18vh;
   width: 100vw;
   background: url("../pictures/background.jpg") no-repeat;
   background-position: 50% 50%;
-  position: relative;
+  position: fixed;
 }
 
 header .logo {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
 }
 
-@media screen and (max-width: 750px) {
-  header .logo {
-    top: 2px;
-  }
+header .logo .logoPic {
+  width: 42%;
 }
 
 @media screen and (max-width: 750px) {
   header .logo .logoPic {
     display: block;
-    width: 50%;
   }
 }
 
@@ -62,6 +59,7 @@ header .mainNav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 100px;
 }
 
 @media screen and (max-width: 750px) {
@@ -96,13 +94,13 @@ header .mainNav ul a {
   background-color: rgba(6, 22, 36, 0.6);
   padding: 5px 10px;
   border-radius: 15px;
-  margin-right: 30px;
+  margin-right: 80px;
 }
 
 @media screen and (max-width: 1400px) {
   header .mainNav ul a {
     font-size: 19px;
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
 
@@ -146,7 +144,7 @@ header .german, header .brit {
 
 header .german {
   top: 16%;
-  right: 105px;
+  right: 165px;
 }
 
 @media screen and (max-width: 800px) {
@@ -166,7 +164,7 @@ header .german {
 
 header .brit {
   top: 60%;
-  right: 105px;
+  right: 165px;
 }
 
 @media screen and (max-width: 800px) {
